@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-time Dashboard</title>
+  <!-- You can link your CSS file here -->
+  <link rel="stylesheet" href="/src/css/styles.css">
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+  <script src="https://app.mapsindoors.com/mapsindoors/js/sdk/4.23.0/mapsindoors-4.23.0.js"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <!-- Application Logo -->
+    <div class="logo">Real-time Dashboard</div>
+    <!-- Admin Section -->
+    <div class="admin">
+      <button id="login-button">Login</button>
+      <button id="logout-button">Logout</button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main-container">
+    <!-- Left Sidebar -->
+    <div class="sidebar">
+    </div>
+
+    <!-- Map Container -->
+    <div class="map-container">
+      <mi-map-mapbox
+        style="width: 100%; height: 100%;"
+        access-token=""
+        mi-api-key=""
+        floor-selector-control-position="top-right"
+        my-position-control-position="top-right">
+      </mi-map-mapbox>
+    </div>
+  </div>
+
+  <!-- Link your JavaScript file at the end of the body -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
